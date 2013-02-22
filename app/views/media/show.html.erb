@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Autor:</b>
+  <%= @medium.autor %>
+</p>
+
+<p>
+  <b>Titel:</b>
+  <%= @medium.titel %>
+</p>
+
+<p>
+  <b>Schlagwort:</b>
+  <%= @medium.schlagwort %>
+</p>
+
+<p>
+  <b>Vorhanden:</b>
+  <%= @medium.vorhanden %>
+</p>
+
+<p>
+  <b>Medienart:</b>
+  <%= @medium.medienart %>
+</p>
+
+
+<%= link_to 'Edit', edit_medium_path(@medium) %> |
+<%= link_to 'Back', media_path %>

@@ -1,0 +1,10 @@
+ <li><%= medium.autor %>
+     <%= medium.titel %>
+     <%= medium.schlagwort %>
+     <%= medium.medienEtikett %>
+     <%= medium.systematik %>
+     <%= medium.signatur %>
+     <%= link_to 'Show', medium %>
+     <%= link_to 'Edit', edit_medium_path(medium) %>
+     <%= link_to 'Destroy', medium, method: :delete, data: { confirm: 'Sind Sie sicher?' } %>
+ </li>

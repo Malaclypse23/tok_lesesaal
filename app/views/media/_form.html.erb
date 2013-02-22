@@ -1,0 +1,37 @@
+<%= form_for(@medium) do |f| %>
+  <% if @medium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@medium.errors.count, "error") %> prohibited this medium from being saved:</h2>
+
+      <ul>
+      <% @medium.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :autor %><br />
+    <%= f.text_field :autor %>
+  </div>
+  <div class="field">
+    <%= f.label :titel %><br />
+    <%= f.text_field :titel %>
+  </div>
+  <div class="field">
+    <%= f.label :schlagwort %><br />
+    <%= f.text_field :schlagwort %>
+  </div>
+  <div class="field">
+    <%= f.label :vorhanden %><br />
+    <%= f.check_box :vorhanden %>
+  </div>
+  <div class="field">
+    <%= f.label :medienEtikett %><br />
+    <%= f.text_field :medienEtikett %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

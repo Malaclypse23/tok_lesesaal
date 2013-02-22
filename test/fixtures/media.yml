@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  autor: MyString
+  titel: MyString
+  schlagwort: MyString
+  vorhanden: false
+  medienart: MyString
+
+two:
+  autor: MyString
+  titel: MyString
+  schlagwort: MyString
+  vorhanden: false
+  medienart: MyString
