@@ -3,7 +3,7 @@ require 'xmlsimple'
 namespace :db do
 #namespace :db => :environment do
   task :ladeXmlBuecher => :environment do
-      file = File.open('tmp/katalog.xml')
+      file = File.open('c:/Sites/katalog.xml')
       katalog = XmlSimple.xml_in(file)
       # alle Kunstbücher...
       buecher = katalog['Kunstbuch'];
