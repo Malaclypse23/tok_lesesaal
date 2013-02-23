@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-#gem 'rails', '3.2.12'
+gem 'rails', '3.2.11'
 gem 'bootstrap-sass', '2.1'
 
 # Bundle edge Rails instead:
- gem 'rails', :git => 'git://github.com/rails/rails.git'
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'xml-simple'
 #gem 'bcrypt-ruby', '3.0.1'
@@ -30,7 +30,7 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
 end
 
-gem 'sqlite3', :group => [:development, :test]
+gem 'sqlite3', '1.3.7', :group => [:development, :test]
 
 group :production do
   gem 'thin'
