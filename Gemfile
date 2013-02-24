@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 gem 'rails', '3.2.11'
 gem 'bootstrap-sass'
 
@@ -16,7 +15,7 @@ gem 'jquery-rails', '2.0.2'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
+  gem 'sass-rails',   '3.2.5'
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', 	  '1.2.3'
 end
@@ -30,9 +29,9 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
 end
 
-gem 'sqlite3', '1.3.7', :group => [:development, :test]
+gem 'sqlite3', '1.3.5', :group => [:development]
 
 group :production do
   gem 'thin'
-  gem 'pg'
+  gem 'pg', '0.12.2'
 end
